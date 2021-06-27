@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXLabel?>
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.sparkwings.passwd.Dashboard">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="146.0">
+               <children>
+                  <MFXLabel labelAlignment="CENTER_LEFT" prefHeight="76.0" prefWidth="146.0" text="Passwd Manager">
+                     <textFill>
+                        <Color red="0.6235294342041016" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </textFill>
+                  </MFXLabel>
+                  <MFXButton prefHeight="116.0" prefWidth="146.0" text="New Passwd" />
+                  <MFXButton prefHeight="111.0" prefWidth="146.0" text="Change Unlock Passwd" />
+                  <MFXButton prefHeight="96.0" prefWidth="179.0" text="Lock" />
+               </children>
+            </VBox>
+            <MFXTableView headerText="Your Passwords" layoutX="146.0" layoutY="125.0" prefHeight="266.0" prefWidth="702.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
