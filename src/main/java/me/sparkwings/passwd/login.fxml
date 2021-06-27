@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDialog?>
+<?import io.github.palexdev.materialfx.controls.MFXLabel?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<MFXDialog maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+           prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <VBox prefHeight="109.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <MFXLabel alignment="CENTER_LEFT" labelAlignment="CENTER_LEFT" prefHeight="159.0" prefWidth="606.0"
+                          text="    Passwd Manager - Login">
+                    <font>
+                        <Font size="22.0"/>
+                    </font>
+                </MFXLabel>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <MFXButton buttonType="RAISED" layoutX="216.0" layoutY="225.0" prefHeight="46.0" prefWidth="169.0"
+                           rippleColor="#9a9898" text="Login"/>
+                <MFXPasswordField layoutX="164.0" layoutY="121.0" prefHeight="25.0" prefWidth="366.0"/>
+                <MFXLabel layoutX="35.0" layoutY="120.0" prefHeight="27.0" prefWidth="118.0" text="Unlock Passwd">
+                    <font>
+                        <Font size="15.0"/>
+                    </font>
+                    <lineColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.2848440408706665" green="0.15095029771327972"
+                                               blue="0.5526315569877625"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </lineColor>
+                </MFXLabel>
+            </children>
+        </AnchorPane>
+    </center>
+</MFXDialog>
